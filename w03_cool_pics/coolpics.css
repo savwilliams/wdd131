@@ -78,6 +78,7 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
+    padding-bottom: 35px;
 }
 .container{    
     padding-bottom: 30px;
