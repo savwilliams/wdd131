@@ -1,4 +1,4 @@
-/*---------general---------*/
+
 
 @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
  :root {
@@ -9,7 +9,11 @@
  --primary-font: Verdana, Geneva, Tahoma, sans-serif;
  --secondary-font: 'Courier Prime', Courier, monospace;
  }
-
+img {
+    width: auto;
+    height: auto;  
+    object-fit: cover;
+}
  * {
     margin: 0;
     padding: 0;
@@ -19,8 +23,42 @@ body{
     margin: 0;
 }
 
-/*---------header---------*/
 
+/*----------------------------header---------------------------------*/
+
+
+.viewer{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;    
+    z-index: 10;
+   
+}
+.viewer-button{  
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: transparent;    
+    font-family: var(--primary-font);
+    font-size: 25px;
+    border-width: 0;
+    justify-self: end;    
+    padding-right: 5%;
+   
+}
+.viewer-img{
+    grid-row-start: 2;
+    grid-row-end: 3;    
+    justify-self: center;    
+    text-align: center;
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 header{
     background-color: var(--secondary-color);
     margin: 0;
@@ -36,11 +74,21 @@ header{
 div{
     text-align: center;
 }
+.home-nav{
+    display: flex;
+    justify-content: center;
+       
+}
+.menu {
+    display: block;
+}
+.hide{
+    display: none;
+}
 .button{
     background-color: transparent;
     border-width: 0;
     font-family: var(--primary-font);
-    font-size: inherit;
     font-size: 25px;
     font-style: inherit;
     font-weight: inherit;
@@ -48,20 +96,26 @@ div{
     line-height: inherit;      
 }
 ul{
-    padding-bottom: 35px;
+    padding-bottom: 25px;
+    gap: 20px;
+    display: flex;
+    margin: 0;
 }
 li{
     list-style-type: none;
     text-align: center;    
     font-size: 19px;
-    padding-top: 5px;
+    padding-bottom: 5px;
+   
 }
 li a{
     color: black;
     font-family: var(--primary-font);
 }
 
-/*---------main---------*/
+
+/*----------------------------main-----------------------------*/
+
 
 .main-title{
     padding-top: 40px;
@@ -84,7 +138,7 @@ section{
     padding-bottom: 30px;
     padding-top: 30px;
 }
-img{ 
+.img-gallery{
     max-width: 100%;
     height: 250px;
     width: 250px;
@@ -94,22 +148,26 @@ img{
     display: block;
     box-shadow: 10px 10px 5px #523F31
 }
+@media screen and (max-width: 699px) {
+    .button{
+        padding-bottom: 25px;
+    }
+}
 @media screen and (min-width: 700px) {
     .gallery {        
         grid-template-columns: 1fr 1fr;
+    }
+    .button{
+        padding-bottom: 25px;
     }
 }
 @media screen and (min-width: 1000px) {
     .gallery {        
         grid-template-columns: 1fr 1fr 1fr;
     }
-    ul li{
-        display: inline;
-        
-    }
-    ul{
+    .menu{
         display: flex;
-        gap: 20px;
+        gap:80px;
     }
     nav{
         display: flex;
@@ -119,8 +177,37 @@ img{
     .button{
         display: none;
     }
+    .viewer{  
+   
+       margin-top: 3rem;
+       margin-bottom: 3rem;
+       margin-left: 16rem;
+       margin-right: 16rem;
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       place-items: center;
+       max-height: 90%;
+       max-width: 60%;
+
+    }
+   .viewer img{
+    max-width: 90%;
+    max-height: 90%;
+    padding-bottom: 10%;
+    
+   }
+    .viewer-button{
+     padding-top: 3%;
+     margin-right: 10%;
+    }
 }
-/*---------footer---------*/
+
+
+/*------------------------------footer-----------------------------*/
+
 
 footer{
     background-color: var(--secondary-color);
