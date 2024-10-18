@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button id="btn">
+        click me
+    </button>
+    <ul id="list">
+        <li>
+            hey
+        </li>
+    </ul>
+    <script>
+        const d = document
+        //const getbid = d.getElementById
+7
+        const obj = {
+            name: 'savannah',
+            getName: () => {
+                return "savannah by functions"
+            },
+            getElementById: () => {
+                return 'ID'
+            }
+        }
+        
+        console.log(obj.getName())
+        console.log(obj.getElementById())
+
+        const button = document.getElementById('btn')
+        button.addEventListener('click', handleClick)
+
+        function handleClick(){
+            console.log('click worked')
+        }
+
+        for (let i = 0; i <= 10; i++){
+            console.log(i)
+        }
+
+        const list = document.getElementById('list')
+
+        console.log(list.children)
+
+        for (let i  = 0; i < list.children.length; i++){
+            const child  = list.children[i]
+            console.log(child)
+        }
+
+
+    </script>
+</body>
+</html>

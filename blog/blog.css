@@ -1,0 +1,125 @@
+/*
+primary color / cream: #f7f5ef
+secondary color / gold: #EFC69B
+main font color / dark: #473144
+accent font color / Red: #AF1B3F
+Body font: Verdana, Geneva, Tahoma, sans-serif;
+Headline font: font-family: Baskervville, Georgia, serif;
+*/
+
+/*---------------------------------------HEADER--------------------------------------*/
+
+body{
+    background-color: #f7f5ef;
+}
+.pg1-header-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pg1-header{
+    margin: 40px;
+    font-size: 50px;
+    color: #473144;
+    font-family: Baskervville, Georgia, serif;
+}
+.home-nav{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: end;
+    justify-items: end;
+    border-top: 2px solid #EFC69B;
+    border-bottom: 2px solid #EFC69B;
+    padding: 35px;
+    margin: 0;
+    gap: 10px;
+    padding-right: 5%;
+
+}
+.home-nav li{
+    font-size: 25px;
+}
+.home-nav li a{
+    color: #AF1B3F;
+    text-decoration: none;
+}
+
+/*------------------------------------------MAIN-------------------------------------------*/
+
+.book-title{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    color: #AF1B3F;
+    font-family: Baskervville, Georgia, serif;
+}
+.main-box{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.article-box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+.book-cover-img{
+    max-width: 100%;
+}
+.book-cover-img-box{
+    display: flex;
+    justify-content: center; 
+
+}
+h3{
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #AF1B3F;
+    font-family: Baskervville, Georgia, serif;
+}
+h3 + p.paragraph-font{
+    margin: 0;
+}
+.filter-form-box{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #EFC69B;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 0;
+}
+.book-details-aside{
+    border-right: 2px solid #EFC69B; 
+    margin-right: 35px;
+    margin-top: 35px;
+    padding-right: 35px;
+    text-align: right;    
+}
+.book-details-aside li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.book-details-aside ul{
+    padding: 0;
+    margin: 0;
+}
+.paragraph-font{
+    font-size: 20px;
+    color: #473144;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.secondary-color{
+    color: #AF1B3F;
+}
+
+/*------------------------------FOOTER------------------------------------*/
+
+footer{
+    height: 40px;
+    border-top: 2px solid #EFC69B; 
+    margin-top: 35px;
+}
