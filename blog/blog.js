@@ -56,7 +56,7 @@ function createArticleHTML(article) {
       </ul>
     </aside>
     <div>
-      <h2 class="book-title">Book Title: ${article.title}</h2>
+      <h2 class="book-title">${article.title}</h2>
       <div class="book-cover-img-box">
         <img class="book-cover-img" src="${article.imgSrc}" alt="${article.imgAlt}">
       </div>
