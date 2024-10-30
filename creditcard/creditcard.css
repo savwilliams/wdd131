@@ -1,0 +1,93 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    
+}
+
+/*-------------------CARD FRONT------------------------*/
+.card-box{
+    display: grid;
+    grid-template-columns: 125px 325px;
+    grid-template-rows: 60px 240px;
+
+}
+.card-front{
+    width: 450px;
+    height: 300px;
+    background-color: #d4d1d1;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px rgba(125, 121, 121, 0.5);
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+}
+.line1{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+p{
+    margin-left: 20px;
+    
+    
+}
+div img{
+    margin-right: 20px;
+}
+.line2{
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.line2 label{
+    display: block;
+}
+.line3{
+    display: flex;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.expiration{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+.expiration input{
+    width: 40px;
+}
+/*-------------------CARD BACK------------------------*/
+
+.card-back{
+    width: 450px;
+    height: 300px;
+    background-color: #d4d1d1;
+    border-radius: 10px;
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.card-back div label{
+    display: block;
+    
+}
+.card-back input{
+    width: 65px;
+}
+.card-strip{
+    background-color: black;
+    height: 40px;
+    margin-top: 30px;
+}
+.card-back div:last-of-type{
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 20px;
+}
+button{
+    margin-top: 80px;
+    margin-left: 470px;
+    padding: 8px 15px 8px 15px;
+    border-radius: 7px;
+}
