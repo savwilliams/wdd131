@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recipies</title>
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module"></script>
     <link rel="stylesheet" href="recipies.css">
     <meta name="description" content="recipe search website">
     <meta name="author" content="Savannah Williams">  
@@ -27,29 +27,11 @@
         <form class="search-form-container" action="submit">
             <label for="recipeSearch"></label>
             <input type="text" name="recipeSearch" id="recipeSearch" placeholder="Find a Recipe" class="body-font">
-            <div id="search-icon-container"><img id="search-icon" src="images/search.svg" alt="image of a search icon"></div>
+            <button id="search-icon-button"><img id="search-icon" src="images/search.svg" alt="image of a search icon button"></button>
         </form>
         <hr>
-        <div class="recipe-container" >
-            <div class="recipe-img-container" >
-                <img class="recipe-img" src="images/apple-crisp.jpg" alt="photo of a bowl of apple crisp dessert with a scoop of icecream on top">
-            </div>
-            <div class="sub-recipe-container" >
-                <h2 class="body-font">dessert</h2>
-                <h3 class="recipe-tital" >APPLE CRISP</h3>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="recipe-description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-            </div>
+        <div class="dynamic-recipe-container" >
+            <!-- dynamic html goes here -->
         </div>
     </main>
     <footer>
