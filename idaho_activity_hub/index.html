@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img class="logo" src="images/logo.png" alt="circular logo that says Idaho Activity Hub">
+            </div>
+            <h1 class="header-title">Idaho Activity Hub</h1>
+            <nav class="nav-container">
+                <ul>
+                    <li class="nav-li"><a href="index.html">Home</a></li>
+                    <li class="nav-li"><a href="activity_highlights.html">Activity Highlights</a></li>
+                </ul>         
+            </nav>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <div>
+            <div class="hero-img-container">
+                <img class="hero-img" src="images/rexburg-hero.jpg" alt="wide view of snowy rexburg looking down at the temple in the middle">
+            </div>
+            <div class="hero-banner-container">
+                <p class="hero-banner-text">Bored? Need to find something to do? You are in the right place! Find the filters menu below and select the categories that best fit your mood, energy level, budget, etc. and we will suggest activities tailored to you.</p>
+            </div>
+        </div>
+        <!-- Filter Section -->
+        <div>          
+            <div class="filter-container">
+                <p>Need help narrowing down what activity you want to do? Apply filters here!</p>
+                <button class="filter-button">Filters</button>
+                <div class="filter-menu">
+                    <div class="filter-option">
+                        <p>Energy Level</p>
+                        <div>
+                            <label for="energy-high"></label>
+                            <input type="checkbox" name="energy" id="energy-high" value="I have tons of energy">
+                             I have tons of energy
+                        </div>
+                        <div>
+                            <label for="energy-low"></label>
+                            <input type="checkbox" name="energy" id="energy-low" value="I don't feel like moving">
+                            I don't feel like moving 
+                        </div>
+                        </div>
+                        <div class="filter-option">
+                            <p>Budget</p>
+                            <div>
+                                <label for="budget-low"></label>
+                                <input type="checkbox" name="budget" id="budget-low" value="I need to limit spending">
+                                I need to limit spending
+                            </div>
+                            <div>
+                                <label for="budget-high"></label>
+                                <input type="checkbox" name="budget" id="budget-high" value="I will pay anything to not be bored">
+                                I will pay anything to not be bored
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <p>Time Availability</p>
+                            <div>
+                                <label for="time-low"></label>
+                                <input type="checkbox" name="time" id="time-low" value="I need something quick (1-2 hours)">
+                                I need something quick (1-2 hours)
+                            </div>
+                            <div>
+                                <label for="time-high"></label>
+                                <input type="checkbox" name="time" id="time-high" value="I have several hours or all day">
+                                I have several hours or all day
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <p>Mood</p>
+                            <div>
+                                <label for="mood-relax"></label>
+                                <input type="checkbox" name="mood" id="mood-relax" value="I want something to help me relax">
+                                I want something to help me relax
+                            </div>
+                            <div>
+                                <label for="mood-energize"></label>
+                                <input type="checkbox" name="mood" id="mood-energize" value="I want something energizing">
+                                I want something energizing
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <p>Social Preferences</p>
+                            <div>
+                                <label for="social-solo"></label>
+                                <input type="checkbox" name="social" id="social-solo" value="I want solo activities">
+                                I want solo activities
+                            </div>
+                            <div>
+                                <label for="social-group"></label>
+                                <input type="checkbox" name="social" id="social-group" value="I want group activities">
+                                I want group activities
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <p>Location</p>
+                            <div>
+                                <label for="location-indoor"></label>
+                                <input type="checkbox" name="location" id="location-indoor" value="Indoors">
+                                Indoors
+                            </div>
+                            <div>
+                                <label for="location-outdoor"></label>
+                                <input type="checkbox" name="location" id="location-outdoor" value="Outdoors">
+                                Outdoors
+                            </div>
+                        </div>
+                    
+                    <button class="submit-filters">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+        <!-- Activity Cards Section -->
+        <div class="card-menu">
+
+        </div>        
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>Idaho Activity Hub &copy; 2024 - Savannah Williams</p>
+        <div class="footer-logo-container">
+            <img class="footer-logo" src="images/logo.png" alt="circular logo that says Idaho Activity Hub">
+        </div>            
+        <nav class="footer-nav-container">
+            <ul>
+                <li class="footer-nav-li"><a href="index.html">Home</a></li>
+                <li class="footer-nav-li"><a href="activity_highlights.html">Activity Highlights</a></li>
+            </ul>         
+        </nav>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

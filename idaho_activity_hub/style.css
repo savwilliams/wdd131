@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Poppins&display=swap');
+
+
+  :root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #3B82BF;
+    --secondary-color: #99A637;
+    --accent1-color: #85C8F2;
+    --accent2-color: #A64826;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "DM Serif Text";
+    --paragraph-font: Poppins, Lato, Roboto;
+  }
+
+/*---------------------------------------- HOME PAGE ----------------------------------------- */
+
+/*----------------- Header Section ------------------- */
+
+.header{
+  max-height: 175px;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+.header-container{
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;   
+  padding: 10px;
+}
+.logo-container{
+  display: flex;    
+}
+.logo{
+  width: 130px;  
+  height: auto;
+}
+.header-title{
+  font-size: 40px;
+  font-family: "DM Serif Text";
+  text-align: center;
+}
+.nav-container{
+  display: flex; 
+  margin: 0px;
+  justify-content: right;
+}
+.nav-container ul{
+  display: flex;    
+  padding: 0;  
+  align-items: center;
+}
+.nav-li{
+  font-family: var(--heading-font);
+  font-size: 20px;
+  list-style-type: none;
+  text-align: center;    
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-li a{
+  color: black;
+  font-family: var(--paragraph-font);
+}
+.nav-li a:hover {
+  color: #FFD700;
+}
+/*------------------ Main Section ------------------------ */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f6;
+}
+/*-- Hero Section -- */
+.hero-img-container{
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
+}
+.hero-img{
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+.hero-banner-container{
+  position: absolute; 
+  top: 55%; 
+  left: 50%; 
+  transform: translate(-50%, -28%); 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  padding: 20px; 
+  align-items: center;
+  text-align: center; 
+  width: 80%; 
+  height: 60%;
+}
+.hero-banner-text{
+  position: absolute;
+  font-family: var(--paragraph-font);
+  font-size: 25px;
+  text-align: left;
+  justify-content: center;
+  top: 30%;  
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+/*-- Filter Section -- */
+.filter-container{
+  height: 200px;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 20px;
+  margin:  20px;
+  height: auto;
+}
+.filter-container p{
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  text-align: center;
+  
+}
+.filter-button{
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--accent1-color);
+  border: 1px solid #5b92b4;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
+}
+.filter-button:hover, .dropbtn:focus {
+background-color: #98d1f5;
+box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.3);
+}
+.filter-menu{
+  background-color: var(--accent2-color);
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: none;
+}
+.filter-menu.visible{
+  display: block;
+}
+.filter-menu div{
+  display: block;
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  
+  padding: 8px;
+}
+.filter-option{
+  border: solid 1px #853a1f;
+}
+.filter-menu div p{
+  margin: 0px;
+  font-weight: 700;
+}
+.submit-filters{
+  font-family: var(--paragraph-font);
+  font-size: 16px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  background-color: #c2603d;
+  border: 1px solid #b35533;
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
+}
+.submit-filters:hover{
+  background-color: #ce653f;
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.3);
+}
+/*-- Activity Cards Section -- */
+.card-menu{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0px 5px 20px 5px;
+}
+.card-menu p{
+  margin: 10px;
+  text-align: left;
+}
+.card-menu p:nth-of-type(2) {
+  border-top: 1px solid #5b92b4;
+  border-bottom: 1px solid #5b92b4;
+  padding: 10px 0px 10px 0px;
+}
+.card-container{
+  width: 300px;
+  height: auto;
+  background-color: var(--accent1-color);
+  display: block;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;  
+  margin: 0 auto;   
+  padding: 10px;
+  font-family: var(--paragraph-font);
+}
+.card-container h3{
+  margin-top: 0px;
+}
+.card-container p{
+  font-size: 16px;
+}
+.card-img-container{
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; 
+  
+}
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+.tags-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  
+}
+.tag{
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  padding: 2px 5px 2px 5px;
+}
+/*------------------- Footer Section ----------------------- */
+
+footer{
+  max-height: 175px;
+  background-color: var(--primary-color);
+  margin: 20px 0px 0px 0px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+}
+footer p{
+  justify-content: left;
+}
+.footer-logo-container{
+  display: flex;   
+  justify-content: center;
+}
+.footer-logo{
+  width: 130px;  
+  height: auto;
+}
+.footer-nav-container{
+  display: flex;
+  justify-content: right;   
+}
+.footer-nav-container ul{
+  display: flex;    
+  padding: 0;
+}
+.footer-nav-li{
+  font-family: var(--heading-font);
+  font-size: 20px;
+  list-style-type: none;
+  text-align: center;    
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-nav-li a{
+  color: black;
+  font-family: var(--paragraph-font);
+}
+.footer-nav-li a:hover {
+  color: #FFD700;
+}
+
+/*---------------------------------------- ACTIVITY HIGHLIGHTS PAGE ----------------------------------------- */
+
+/*------------------ Main Section ------------------------ */
+.main-pg2{
+  display: flex;
+  justify-content: center;
+  
+}
+.pg2-content{
+  text-align: center;
+  width: 80%;
+  
+}
+/*-- Hero Section -- */
+.pg2-hero-img-container{  
+  margin-top: 30px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  border-radius: 5px;
+  width: 100%;
+}
+.pg2-hero-img{
+  width: 100%; 
+  height: auto;  
+}
+.hero-text{
+  font-family: var(--paragraph-font);
+  justify-content: center;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  margin: 70px 0px 70px 0px;
+}
+
+/*-- dropdown Section -- */
+
+.dropdown{
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  text-align: left;  
+}
+.dropbtn{
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+  font-size: 20px;
+  font-family: var(--paragraph-font);
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: var(--accent2-color);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+.dropdown-content{
+  display: none;
+  background-color: var(--accent1-color);
+  font-family: var(--paragraph-font);
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 350px;
+}
+.dropdown-item{
+  border: 1px solid #70b0d8;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+.dropdown-item h2{
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 6px;
+}
+.dropdown-content p{
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+.show {
+  display: block;
+}
+
+
+/*-------------------- Media Queries------------------------ */
+
+@media only screen and (max-width: 750px) {  
+   /*--------------- index.html ---------------- */
+    /*-- Header Section -- */
+  .header{
+    max-height: 300px;    
+    }
+    .header-container{       
+      display: grid;  
+      grid-template-columns: 1fr;   
+      padding: 10px;  
+    }
+    .nav-container{
+      margin-right: 0px;
+      justify-content: center;
+    }
+    .nav-container ul{      
+      flex-direction: column;     
+    }
+    .logo-container{
+      margin-left: 0px;
+      justify-content: center;
+    }
+    .logo{
+      width: 100px;       
+    }
+    .header-title{
+      font-size: 35px;
+      margin-bottom: 0px;
+    }
+    /*-- Hero Section -- */
+    .hero-img-container{
+      height: 37vh;
+    }
+    .hero-banner-container{
+      top: 62%; 
+      padding: 5px; 
+      width: 90%; 
+      height: 30%;
+    }
+    .hero-banner-text{     
+      font-size: 17px;
+      top: -5%;  
+      padding-left: 7px;
+      padding-right: 7px;      
+    }
+    /*-- Filter Section -- */
+
+    .filter-container p{
+      font-size: 18px;      
+    }
+    .filter-button{
+      font-size: 20px;
+      padding: 4px 18px 4px 18px;
+    }
+    .filter-menu{
+      width: 95%;      
+    }
+    /*-- Activity Cards Section -- */
+    .card-menu{
+      grid-template-columns: 1fr;
+    }
+    .card-menu p{
+      margin: 10px;
+      text-align: left;
+    }
+    .card-menu p:nth-of-type(2) {
+      border-top: 1px solid #5b92b4;
+      border-bottom: 1px solid #5b92b4;
+      padding: 10px 0px 10px 0px;
+    }
+    .card-container{
+      width: 90%;      
+    }
+    .card-container h3{
+      font-size: 18px;
+    }
+    /*------- Footer Section --------- */
+
+    footer{
+      max-height: 225px;      
+      flex-direction: column-reverse;
+      justify-content: center;
+      padding: 10px;
+      font-size: 16px;
+    }
+    footer p{
+      margin-left: 0px;
+    }
+    .footer-nav-container ul{
+      display: flex; 
+      flex-direction: column;   
+      
+    }
+    .footer-nav-li{
+
+      font-size: 16px;
+
+    }
+    /*----------- ACTIVITY HIGHLIGHTS PAGE ------------ */
+
+    /*------ Main Section -------- */
+    .pg2-content{
+      text-align: center;
+      width: 85%;
+      
+    }
+    /*-- Hero Section -- */
+   
+    .hero-text{
+
+      font-size: 30px;
+      margin: 40px 0px 40px 0px;
+    }
+
+    /*-- dropdown Section -- */
+
+    .dropdown{
+
+      margin-bottom: 25px;
+
+    }
+    .dropdown-content{
+
+      height: 300px;
+    }
+
+       
+}
